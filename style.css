@@ -19,3 +19,13 @@
 .background{
     background-color: #ffa6029a;
 }
+
+.img{
+    border: white;
+}
+.btn1{
+    border-color: white;
+}
+.btn1:hover{
+    box-shadow: -5px -5px 6px 0 #ffa6029a, 5px 5px 6px 0 #ffc107;
+}

@@ -62,6 +62,13 @@
                     <label for="">Objective</label>
                     <textarea id="objectiveField" rows="5" placeholder="Enter your objective" class="form-control"></textarea>
                 </div>
+                <div class="form-group mt-2" id="skill">
+                    <label for="">Skills</label>
+                    <textarea rows="1"placeholder="Enter your Skills" class="form-control skillField"></textarea>
+                    <div class="container text-center mt-2" id="skillAddButton">
+                        <button onclick="addNewSkillsField()" class="btn btn-primary btn-sm">Add more Skills</button>
+                    </div>
+                </div>
                 <div class="form-group mt-2" id="we">
                     <label for="">Work Experience</label>
                     <textarea rows="5"placeholder="Enter your Work Experience" class="form-control weField"></textarea>
@@ -84,9 +91,13 @@
 
             </div>
         </div>
-        <div class="container text-center mt-2 mb-5">
-            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
-        </div>
+        <div class="ps mt-2 mb-5">
+            <p class="text-secondary my-3">Select a Template!</p>
+            <a href="#p1"><button onclick="generateCV()" class="btn1"><img src="Sidharth.png" alt="" style="height:300px; width:250px; border: none;" class="img"></button></a>
+            <!-- <a href="#p2"><img src="images/Resham.jpg" alt=""></a>
+            <a href="#p3"><img src="images/Deepak.jpg" alt=""></a>
+            <a href="#p4"><img src="images/Pradeep.jpg" alt=""></a> -->
+         </div>    
     </div>
 
 
@@ -132,6 +143,29 @@
                             non cupiditate perspiciatis eum! Nam facilis corrupti nisi quas dolore dolor, consequatur facere 
                             quibusdam iste laboriosam debitis atque quo aliquam corporis.
                         </p>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="skillT" style="list-style-type: square;">
+                            <li>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </li>
+                            <li>
+                                Magni, nam ad ducimus earum, officiis officia 
+                                tenetur, maiores corrupti minima quasi explicabo et quos nulla dolores error.
+                            </li>
+                            <li>
+                                Inventore, animi fugiat non cupiditate perspiciatis eum! Nam facilis corrupti nisi quas dolore dolor, consequatur facere 
+                                quibusdam iste laboriosam debitis atque quo aliquam corporis.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 

@@ -29,6 +29,20 @@ function addNewAQField(){
     aqOb.insertBefore(newNode, aqAddButtonOb);
 }
 
+function addNewSkillsField(){
+    let newNode= document.createElement("textarea");
+    newNode.classList.add("form-control");
+    newNode.classList.add("skillField");
+    newNode.classList.add("mt-2");
+    newNode.setAttribute("rows", 1);
+    newNode.setAttribute("placeholder", "Enter your Skills");
+
+    let skillOb = document.getElementById("skill");
+    let skillAddButtonOb= document.getElementById("skillAddButton");
+
+    skillOb.insertBefore(newNode, skillAddButtonOb);
+}
+
 
 
 //Generating CV
@@ -67,24 +81,33 @@ function generateCV()
     let objectiveT=document.getElementById('objectiveT');
     objectiveT.innerHTML=objectiveField;
 
-    // Work Experience
-    let wes=document.getElementsByClassName('weField');
-    let str='';
-    for(let e of wes)
+    // Skills
+    let skills=document.getElementsByClassName('skillField');
+   let str='';
+    for(let e of skills)
     {
         str+= `<li> ${e.value} </li>`;
     }
-    document.getElementById("weT").innerHTML=str;
+    document.getElementById("skillT").innerHTML=str;
+
+    // Work Experience
+    let wes=document.getElementsByClassName('weField');
+    let str1='';
+    for(let e of wes)
+    {
+        str1+= `<li> ${e.value} </li>`;
+    }
+    document.getElementById("weT").innerHTML=str1;
 
     // Academic Qualification
 
     let aqs=document.getElementsByClassName('eqField');
-    let str1='';
+    let str2='';
     for(let e of aqs)
     {
-        str1+= `<li> ${e.value} </li>`;
+        str2+= `<li> ${e.value} </li>`;
     }
-    document.getElementById("aqT").innerHTML=str1; 
+    document.getElementById("aqT").innerHTML=str2; 
 
         
     //code for setting image
