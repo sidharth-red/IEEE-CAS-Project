@@ -39,7 +39,36 @@
                     <input id="imgField" type="file" class="form-control">
                 </div>
 
-                <p class="text-secondary my-3">Social Links</p>
+
+
+            </div>
+            <div class="col-md-6">
+
+                <h3 class="text-center">Professional Information</h3>
+
+                <div class="form-group mt-2">
+                    <label for="">Objective</label>
+                    <textarea id="objectiveField" rows="3" placeholder="Enter your objective" class="form-control"></textarea>
+                </div>
+                <div class="form-group mt-2" id="skill">
+                    <label for="">Skills</label>                 
+                    <textarea rows="1"placeholder="Enter your Skills" class="form-control skillField"></textarea>                    
+                    <button onclick="addNewSkillsField()" class="btn" id="skillAddButton">+</button>    
+
+                </div>
+                <div class="form-group mt-2" id="we">
+                    <label for="">Work Experience</label>
+                    <textarea rows="3"placeholder="Enter your Work Experience" class="form-control weField"></textarea>
+                    <button onclick="addNewWEField()" class="btn">+</button>
+                </div>
+
+
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea rows="3" placeholder="Enter your Academic Qualifications" class="form-control eqField"></textarea>
+                    <button onclick="addNewAQField()" class="btn">+</button>
+                </div>
+                <h4 class="my-3">Social Links</h4>
                 <div class="form-group">
                     <label for="linkedField">LinkedIn</label>
                     <input type="text" id="linkedField" placeholder="Your LinkedIn ID link" class="form-control">
@@ -54,45 +83,9 @@
                 </div>
 
             </div>
-            <div class="col-md-6">
-
-                <h3 class="text-center">Professional Information</h3>
-
-                <div class="form-group mt-2">
-                    <label for="">Objective</label>
-                    <textarea id="objectiveField" rows="5" placeholder="Enter your objective" class="form-control"></textarea>
-                </div>
-                <div class="form-group mt-2" id="skill">
-                    <label for="">Skills</label>
-                    <textarea rows="1"placeholder="Enter your Skills" class="form-control skillField"></textarea>
-                    <div class="container text-center mt-2" id="skillAddButton">
-                        <button onclick="addNewSkillsField()" class="btn btn-primary btn-sm">Add more Skills</button>
-                    </div>
-                </div>
-                <div class="form-group mt-2" id="we">
-                    <label for="">Work Experience</label>
-                    <textarea rows="5"placeholder="Enter your Work Experience" class="form-control weField"></textarea>
-
-                    
-
-                    <div class="container text-center mt-2" id="weAddButton">
-                        <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add more Work Experience</button>
-                    </div>
-                </div>
-
-
-                <div class="form-group mt-2" id="aq">
-                    <label for="">Academic Qualification</label>
-                    <textarea rows="4" placeholder="Enter your Academic Qualifications" class="form-control eqField"></textarea>
-                     <div class="container text-center mt-2"id="aqAddButton">
-                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add more Academic Qualification</button>
-                    </div>
-                </div>
-
-            </div>
         </div>
-        <div class="ps mt-2 mb-5">
-            <p class="text-secondary my-3">Select a Template!</p>
+        <div class="ps mt-5 mb-5">
+            <p class="my-3">Select a Template!</p>
             <a href="#p1"><button onclick="generateCV()" class="btn1"><img src="Sidharth.png" alt="" style="height:300px; width:250px; border: none;" class="img"></button></a>
             <!-- <a href="#p2"><img src="images/Resham.jpg" alt=""></a>
             <a href="#p3"><img src="images/Deepak.jpg" alt=""></a>

@@ -1,7 +1,11 @@
-/*body{
-    background-color: red;
-}*/
 
+body{
+    background-color:#092c50;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 #cv-form{
     /* display: none; */
 }
@@ -18,10 +22,19 @@
 
 .background{
     background-color: #ffa6029a;
+    margin-top: 0%; 
 }
 
 .img{
     border: white;
+}
+.btn{
+    color: white;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.btn:hover{
+    background-color: aqua;
 }
 .btn1{
     border-color: white;

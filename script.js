@@ -125,6 +125,8 @@ function generateCV()
 
     document.getElementById('cv-form').style.display='none';
     document.getElementById('cv-template').style.display='block';
+    document.body.style.background="white"
+    document.body.style.color="black"
 }
 
 
@@ -135,7 +137,7 @@ window.onload = function () {
         .addEventListener("click", () => {
             const template = this.document.getElementById("cv-template");
             var opt = {
-                filename: 'myfile.pdf',
+                filename: 'myresume.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
