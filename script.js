@@ -43,13 +43,13 @@ function addNewSkillsField(){
     skillOb.insertBefore(newNode, skillAddButtonOb);
 }
 
-function textbox()
-{
-    document.getElementById('textbox').style.borderColor='purple';
-    document.getElementById('textbox').style.backgroundColor='#4AC9DF';
-    document.getElementById('textbox').style.color='white';
+// function textbox()
+// {
+//     document.getElementById('textbox').style.borderColor='purple';
+//     document.getElementById('textbox').style.backgroundColor='#4AC9DF';
+//     document.getElementById('textbox').style.color='white';
 
-}
+// }
 
 //Generating CV
 function generateCV()

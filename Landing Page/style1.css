@@ -1,0 +1,22 @@
+body {
+  padding-top: 56px;
+}
+
+.jumbotron {
+  background: url("Images/image.jpg") no-repeat center;
+  background-size: 100% 100%;
+  padding: 15%;
+}
+
+.jumbotron p {
+  font-size: 3.5rem;
+}
+.btn-primary {
+  background-color: #c60063;
+  border-color: #c60063;
+}
+.btn-secondary {
+  background-color: transparent;
+  border-color: #c60063;
+  color: #c60063;
+}
