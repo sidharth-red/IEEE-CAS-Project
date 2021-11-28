@@ -59,19 +59,19 @@
                 <div class="form-group mt-2" id="we">
                     <label for="">Work Experience</label>
                     <textarea rows="3"placeholder="Enter your Work Experience" class="form-control weField"></textarea>
-                    <button onclick="addNewWEField()" class="btn">+</button>
+                    <button id="weAddButton" onclick="addNewWEField()" class="btn">+</button>
                 </div>
 
 
                 <div class="form-group mt-2" id="aq">
                     <label for="">Academic Qualification</label>
-                    <textarea rows="3" placeholder="Enter your Academic Qualifications" class="form-control eqField"></textarea>
-                    <button onclick="addNewAQField()" class="btn">+</button>
+                    <textarea rows="3" id="textbox" onclick="textbox()" placeholder="Enter your Academic Qualifications" class="text form-control eqField"></textarea>
+                    <button id="aqAddButton" onclick="addNewAQField()" class="btn">+</button>
                 </div>
                 <h4 class="my-3">Social Links</h4>
                 <div class="form-group">
                     <label for="linkedField">LinkedIn</label>
-                    <input type="text" id="linkedField" placeholder="Your LinkedIn ID link" class="form-control">
+                    <input type="text"id="linkedField" placeholder="Your LinkedIn ID link" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="fbField">Facebook</label>

@@ -25,6 +25,12 @@ body{
     margin-top: 0%; 
 }
 
+/* .text{
+    background-color: white;
+    border-color: none;
+    color: black;
+} */
+
 .img{
     border: white;
 }
