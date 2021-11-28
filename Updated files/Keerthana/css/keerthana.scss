@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #524f5f;
+  font-family: 'Times New Roman', Times, serif;
+}
+section{
+  box-shadow: rgb(0, 0, 0) 0 0.3em 1em; 
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  article {
+    margin: 0 auto;
+    padding: 2.25em;
+    width: 100%;
+    background: white;
+    position: relative;
+    .header{
+      margin-bottom: 1em;
+      .name-header{
+        text-transform: uppercase;
+        font-size: 1.4em;
+        text-align: center;
+        font-weight: bold;
+      }
+      .personal-info{
+        display: flex;
+        padding: 0 0 0 0.6em;
+        justify-content: space-between;
+      }
+    }
+    .work-container{
+      margin: 0.3em 0 0 0.625em;
+      .work-header{
+        font-size: 0.9em;
+        hr {
+          margin: 0 0 0.3em 0;
+        }
+      }
+      .work{
+        padding: 0 0.5em 0.5em 0;
+        .work-top{
+          display: flex;
+          margin: 0 auto;
+          justify-content: space-between;
+          font-weight: bold;
+          .work-top-right{
+            text-align: right;
+            font-size: 0.6em;
+          }
+        }
+        .work-middle{
+          font-size: 0.9em;
+          font-style: italic;
+          margin-top: 0.2em;
+        }
+        .work-bottom{
+          margin-top: 0.2em;
+          ul{
+            list-style-type: circle;
+            margin-bottom: 0.2em;
+            li{
+              font-size: 0.9em;
+              margin: 0 0 0 2em;
+            }
+          }
+        }
+      }
+    }
+  }  
+}
+footer{
+  color: white;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+#addDropBtn {
+  position: fixed;
+  font-size: 18px;
+  height: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: none;
+}
+
+#dropBtn, #addBtn {
+  color: black;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.cmpnt-btn {
+  background: #d8d8d8;
+}
+
+.cmpnt-p-btn {
+  background: #eaeaea;
+}
+
+.cmpnt-li-btn {
+  background: white;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin: 50px auto;
+    width: 792px;
+  }
+  .page-break {
+    display: block;
+  }
+}
+/*# sourceMappingURL=keerthana.css.map */
