@@ -15,12 +15,12 @@
 <body>
     <div class="container" id="cv-form">
         <h1 class="text-center my-2"> Resume Generator</h1>
-        <p class="text-center">IEEE-CAS Project</p>
+        <b><p class="text-center">IEEE-CAS</p></b>
         <!-- Entering Information -->
         <div class="row">
             <div class="col-md-6">
 
-                <h3 class="text-center">Personal Information</h3>
+                <h4 class="text-center">Personal Information</h3>
                 <div class="form-group mt-2">
                     <label for="nameField">Your Name</label>
                     <input type="text" id="nameField" placeholder="Enter name" class="form-control">
@@ -29,12 +29,12 @@
                     <label for="contactField">Your Phone Number</label>
                     <input type="text" id="contactField" placeholder="Enter Phone Number" class="form-control">
                 </div>
-                <div class="form-group mt-2">
+                <div class="form-group mt-3">
                     <label for="addressField">Your Address</label>
-                    <textarea rows="5" id="addressField" placeholder="Enter address" class="form-control"></textarea>
+                    <textarea rows="4" id="addressField" placeholder="Enter address" class="form-control"></textarea>
                 </div>
 
-                <div class="form-group mt-3">
+                <div class="form-group mt-5">
                     <label for="">Select your Photo</label>
                     <input id="imgField" type="file" class="form-control">
                 </div>
@@ -44,11 +44,11 @@
             </div>
             <div class="col-md-6">
 
-                <h3 class="text-center">Professional Information</h3>
+                <h4 class="text-center">Professional Information</h3>
 
                 <div class="form-group mt-2">
                     <label for="">Objective</label>
-                    <textarea id="objectiveField" rows="3" placeholder="Enter your objective" class="form-control"></textarea>
+                    <textarea id="objectiveField" rows="1" placeholder="Enter your objective" class="form-control"></textarea>
                 </div>
                 <div class="form-group mt-2" id="skill">
                     <label for="">Skills</label>                 
@@ -56,14 +56,14 @@
                     <button onclick="addNewSkillsField()" class="btn" id="skillAddButton">+</button>    
 
                 </div>
-                <div class="form-group mt-2" id="we">
+                <div class="form-group" id="we">
                     <label for="">Work Experience</label>
                     <textarea rows="3"placeholder="Enter your Work Experience" class="form-control weField"></textarea>
                     <button id="weAddButton" onclick="addNewWEField()" class="btn">+</button>
                 </div>
 
 
-                <div class="form-group mt-2" id="aq">
+                <div class="form-group " id="aq">
                     <label for="">Academic Qualification</label>
                     <textarea rows="3" id="textbox" onclick="textbox()" placeholder="Enter your Academic Qualifications" class="text form-control eqField"></textarea>
                     <button id="aqAddButton" onclick="addNewAQField()" class="btn">+</button>
