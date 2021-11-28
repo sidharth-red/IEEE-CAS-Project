@@ -4,11 +4,20 @@
   box-sizing: border-box;
 }
 body {
-  background: #524f5f;
+  background: #744544;
   font-family: 'Times New Roman', Times, serif;
 }
+div:empty:not(:focus)::before {
+  content: attr(data-placeholder);
+  color: rgba(70, 70, 70, 0.486);
+  cursor:text;
+}
+p:empty:not(:focus)::before {
+  content: attr(data-placeholder);
+  color: rgba(70, 70, 70, 0.486);
+  cursor:text;
+}
 section{
-  box-shadow: rgb(0, 0, 0) 0 0.3em 1em; 
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -32,7 +41,7 @@ section{
         justify-content: space-between;
       }
     }
-    .work-container{
+    #wc, .work-container{
       margin: 0.3em 0 0 0.625em;
       .work-header{
         font-size: 0.9em;
@@ -49,7 +58,7 @@ section{
           font-weight: bold;
           .work-top-right{
             text-align: right;
-            font-size: 0.6em;
+            font-size: 0.8em;
           }
         }
         .work-middle{
@@ -70,62 +79,100 @@ section{
         }
       }
     }
+  }
+  #gen{
+    font-size: 1.1em;
+    background-color: #ac1510;
+    color: white;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 -0.8em -0.9em 0;
+    padding: 0.4em;
+    cursor: pointer;
   }  
+}
+#gen:hover{
+  background-color: #ff0000;
+  transition-duration: 0.4s;
 }
 footer{
   color: white;
   text-align: center;
   margin-bottom: 1em;
+  font-size: 0.75em;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-
-
-
-#addDropBtn {
-  position: fixed;
-  font-size: 18px;
-  height: 20px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  display: none;
-}
-
-#dropBtn, #addBtn {
-  color: black;
-  width: 20px;
-  height: 20px;
-  line-height: 16px;
-  border: 1px solid black;
-  display: inline-block;
-}
-
-.cmpnt-btn {
-  background: #d8d8d8;
-}
-
-.cmpnt-p-btn {
-  background: #eaeaea;
-}
-
-.cmpnt-li-btn {
-  background: white;
-}
-
-@media (min-width: 768px) {
-  section {
-    margin: 50px auto;
-    width: 792px;
+.hint{
+  background-color: #744544;
+  position: absolute;
+  top: 7em;
+  left: 2em;
+  padding: 1em;
+  color: white;
+  border: 1px solid white;
+  p{
+    font-weight: bold;
+    margin-bottom: 1em; 
   }
-  .page-break {
-    display: block;
+  ul{
+    list-style: none;
+  }
+}
+@media (max-width: 700px) {
+  section{
+    margin: 0 0 1em 0;
+    #gen{
+      margin:0;
+    }
+    article .header {
+      .name-header{
+        font-size: 1em;
+        margin-bottom: 1em;
+      }
+      .personal-info{
+        div{
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 700px) {
+  section {
+    width: 95vw;
+    margin: 1em;
+    #gen{
+      margin:0;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  section {
+		margin: 50px auto;
+		width: 792px;
+	}
+}
+@media (max-width: 1400px) {
+  .hint, input, #add, #rem{
+    display: none;
+  }
+}
+@media print {
+  footer, button, input, .hint {
+    display: none;
+  }
+  @page { 
+    size: auto;  margin: 0mm; 
+  }
+  div:empty {
+    content: attr(data-placeholder);
+    display: none;
+  }
+  p:empty{
+    content: attr(data-placeholder);
+    display: none;
   }
 }
 /*# sourceMappingURL=keerthana.css.map */
