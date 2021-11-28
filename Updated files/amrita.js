@@ -36,7 +36,7 @@ function toggle(){
             <h3>${inputfields["title"].value}</h3>
             <h3>${inputfields["email"].value}</h3>
            </div>
-           <div class="main">
+           <div class="main" id="cv-template">
                <div>
                  <h2>OBJECTIVE</h2>
                  <p>${inputfields["objective"].value}</p>
@@ -58,8 +58,8 @@ function toggle(){
            </div>
            <div class="btn">
               <button onclick="print()">Print Resume</button>
-        
         </div>
+        
          `
     }else{
         inputfields.style.display =  "block"
