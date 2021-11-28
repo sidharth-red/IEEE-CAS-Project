@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="css/keerthana.css">
+    <script src="script/keerthana.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+</head>
+<body>
+    <section class="container" id="print-section">
+		<article>
+			<div class="header">
+				<div class="name-header">
+					<p contenteditable class="name">Keerthana Rajeev</p>
+				</div>
+				<div class="personal-info">
+					<div>
+						<p contenteditable class="contact">+919172857362</p>
+					</div>
+					<div class="email">
+						<p contenteditable>keerthana@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div id="wc">
+				<div class="work-container">
+					<div class="work-header">
+						<h2 contenteditable class="title">Work Experience</h2>
+						<hr>
+					</div>
+					<div class="work">
+						<div class="work-top">
+							<div class="work-top-left">
+								<div contenteditable>N/A</div>
+							</div>
+							<div class="work-top-right">
+								<div contenteditable>2019 - 2020</div>
+							</div>
+						</div>
+						<div class="work-middle">
+							<div contenteditable>His source of wealth is unknown yet reliable.</div>
+						</div>
+						<div class="work-bottom">
+							<p contenteditable>Develop an all-seeing AI:</p>
+							<ul contenteditable>
+								<li>Taught the Machine to save everyone</li>
+								<li>Taught the Machine how to play chess</li>
+							</ul>
+							<p contenteditable>Save the irrelevant numbers:</p>
+							<ul contenteditable>
+								<li>Identify the irrelevant number as victim or perpetrator</li>
+								<li>Saved everyone</li>
+								<li>Failed to save himself</li>
+							</ul>
+						</div>
+					</div>
+					<div class="work">
+						<div class="work-top">
+							<div class="work-top-left">
+								<div contenteditable data-placeholder="Heading"></div>
+							</div>
+							<div class="work-top-right">
+								<div contenteditable data-placeholder="Date"></div>
+							</div>
+						</div>
+						<div class="work-middle">
+							<div contenteditable data-placeholder="Additional para"></div>
+						</div>
+						<div class="work-bottom">
+							<p contenteditable data-placeholder="Paragraph"></p>
+							<ul contenteditable>
+								<li></li>
+							</ul>
+							<p contenteditable  data-placeholder="Paragraph"></p>
+							<ul contenteditable>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="work-container">
+					<div class="work-header">
+						<h2 contenteditable class="title">Education</h2>
+						<hr>
+					</div>
+					<div class="work">
+						<div class="work-top">
+							<div class="work-top-left">
+								<div contenteditable>Vellore Institute of Technology</div>
+							</div>
+							<div class="work-top-right">
+								<div contenteditable>2016 - 2017</div>
+							</div>
+						</div>
+						<div class="work-bottom">
+							<p contenteditable>Education highlights:</p>
+							<ul contenteditable>
+								<li>Dropout</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="work-container">
+					<div class="work-header">
+						<h2 contenteditable>Professional Skills</h2>
+						<hr>
+					</div>
+					<div class="work">
+						<div class="work-top">
+							<div class="work-top-left">
+								<div contenteditable>Hacking skills</div>
+							</div>
+						</div>
+						<div class="work-bottom">
+							<p contenteditable>C language, etc</p>
+							<ul contenteditable>
+								<li>Instructed a student on building a large program once in an undercover mission when he pretended to be a math teacher</li>
+							</ul>
+						</div>
+					</div>
+					<div class="work">
+						<div class="work-top">
+							<div class="work-top-left">
+								<div contenteditable data-placeholder="Heading"></div>
+							</div>
+							<div class="work-top-right">
+								<div contenteditable data-placeholder="Date"></div>
+							</div>
+						</div>
+						<div class="work-middle">
+							<div contenteditable data-placeholder="Additional para"></div>
+						</div>
+						<div class="work-bottom">
+							<p contenteditable data-placeholder="Paragraph"></p>
+							<ul contenteditable>
+								<li></li>
+							</ul>
+							<p contenteditable  data-placeholder="Paragraph"></p>
+							<ul contenteditable>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<button id="gen">Generate CV</button>
+	</section>
+	<div class="hint">
+		<p>HINT</p>
+		<ul>
+			<li>Click to edit. </li>
+			<li>Tab key to go to next input box. </li>
+			<li>Add/remove any element.</li>
+			<li>Generate CV button to print</li>
+		</ul>
+	</div>
+	<footer>The IEEE-CAS Project</footer>
+	<script>
+		$( "#gen" ).click(function() {
+			window.print();
+		});
+	</script>
+</body>
+</html>
